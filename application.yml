@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: book-service
   datasource:
     url: ${STATES_URL}
     username: ${STATES_USER}
