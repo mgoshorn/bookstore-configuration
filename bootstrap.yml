@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: book-service
+  datasource:
+    url: ${STATES_URL}
+    username: ${STATES_USER}
+    password: ${STATES_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 5
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: false
+      temp:
+        use_jdbc_metadata_defaults: false
